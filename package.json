@@ -10,12 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/thianlopezz/client-quickstart-js.git"
   },
-  "author": "",
+  "author": "TwilioDevEd",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thianlopezz/client-quickstart-js/issues"
+    "url": "https://github.com/TwilioDevEd/client-quickstart-js/issues"
   },
-  "homepage": "https://github.com/thianlopezz/client-quickstart-js#readme",
+  "homepage": "https://github.com/TwilioDevEd/client-quickstart-js#readme",
   "dependencies": {
     "express": "^4.16.4"
   }
