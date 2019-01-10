@@ -58,10 +58,19 @@ sudo npm install http-server -g
 on macOS or Linux
 
 
-## Run the local server
+## Generate some provisional SSL certificates for the webserver
+Since modern browsers will block use of microphone by low-security sites, you'll need to run your server with HTTPS which requires certificates.
 
 ```bash
-http-server
+openssl genrsa -out key.pem 2048
+openssl req -new -x509 -key key.pem -out cert.pem -days 3650 -subj /CN=<YOUR-HOSTNAME-HERE>
+```
+
+## Run the local server
+
+You can supply alternative certificates, otherwise it will use the certificate and key generated above.
+```bash
+http-server -S
 ```
 
 ## Have some fun
@@ -73,8 +82,15 @@ http-server
 
    ![screenshot of chat app](https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/TwilioClientQuickstart.original.png)
 
+ NB: You might also need to add permission to call other countries than US, in the Twilio console:
+ [https://www.twilio.com/console/voice/calls/geo-permissions/](https://www.twilio.com/console/voice/calls/geo-permissions/)
+
 ## Meta
 
 * No warranty expressed or implied. Software is as is. Diggity.
 * [MIT License](http://www.opensource.org/licenses/mit-license.html)
 * Lovingly crafted by Twilio Developer Education.
+
+## Troubleshooting
+
+If you see "NotAllowedError" check both that 1) you are running HTTPS and 2) your browser permissions allow the access to the microphone.
