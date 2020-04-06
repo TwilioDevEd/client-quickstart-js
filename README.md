@@ -9,7 +9,7 @@ all the config values we need to run the application:
 
 | Config&nbsp;Value  | Description |
 | :-------------  |:------------- |
-TwiML&nbsp;App&nbsp;SID | The TwiML application with a voice URL configured to access your server running this app - create one [in the console here](https://www.twilio.com//console/phone-numbers/dev-tools/twiml-apps). Also, you will need to configure the Voice "REQUEST URL" on the TwiML app to point to a Twilio Function you will create.
+TwiML&nbsp;App&nbsp;SID | The TwiML application with a voice URL configured to access your server running this app - create one [in the console here](https://www.twilio.com/console/phone-numbers/runtime/twiml-apps). Also, you will need to configure the Voice "REQUEST URL" on the TwiML app to point to a Twilio Function you will create.
 Twilio&nbsp;Phone&nbsp;# | A Twilio phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) - you can [get one here](https://www.twilio.com/console/phone-numbers/incoming)
 
 ## Creating the quickstart functions
@@ -22,7 +22,7 @@ After you successfully put in the configuration, you'll have two Twilio Function
 
 ## Configuration and setup
 
-[Configure your TwiML app](https://www.twilio.com/console/phone-numbers/dev-tools/twiml-apps)'s
+[Configure your TwiML app](https://www.twilio.com/console/phone-numbers/runtime/twiml-apps)'s
 Voice "REQUEST URL" to be your Twilio Function URL - you can copy and paste the URL directly from the voice calls function page. For example:
 
 ![screenshot of twiml app](https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/ClientJSCopyVoiceURL.width-500.png)
