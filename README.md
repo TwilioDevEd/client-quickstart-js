@@ -43,22 +43,19 @@ NOTE: You should not use Twilio Functions to generate capability tokens for your
 
 [Visit our guide](https://www.twilio.com/docs/voice/client/capability-tokens) to learn how to generate capability tokens in your own C#, Java, Node.js, PHP, Python, or Ruby application.
 
-## Setting up a local HTTP server
+## Running the app
 
-You'll need to load the front end of your web application from a web server for Twilio Client to connect successfully from Chrome (it should work in Firefox if you load it from the file system). The easiest way to do that is to install a local HTTP server like [http-server](https://github.com/indexzero/http-server)
-
-```bash
-npm install http-server -g
-```
-
-or 
+It only left to run our application
 
 ```bash
-sudo npm install http-server -g
+npm install
 ```
 
-on macOS or Linux
+and
 
+```bash
+node index.js
+```
 
 ## Run the local server
 

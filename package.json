@@ -1,0 +1,22 @@
+{
+  "name": "client-quickstart",
+  "version": "1.0.0",
+  "description": "<a href=\"https://www.twilio.com\">\r   <img src=\"https://static0.twilio.com/marketing/bundles/marketing/img/logos/wordmark-red.svg\" alt=\"Twilio\" width=\"250\" />\r </a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thianlopezz/client-quickstart-js.git"
+  },
+  "author": "TwilioDevEd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TwilioDevEd/client-quickstart-js/issues"
+  },
+  "homepage": "https://github.com/TwilioDevEd/client-quickstart-js#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
